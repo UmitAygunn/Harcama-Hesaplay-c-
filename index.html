@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spending Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Spending Calculator</h1>
+
+    <div class="container">
+      <!-- Karşılama Metni -->
+      <h3 class="greet">
+        <span>Welcome;</span>
+        <input id="user-inp" type="text" placeholder="Enter your name.." />
+      </h3>
+
+      <!-- Form Alanı -->
+
+      <form>
+        <!-- Üst Kısım -->
+        <div class="double">
+          <div class="form-field">
+            <label>Spending:</label>
+            <input id="title-inp" type="text" />
+          </div>
+          <div class="form-field">
+            <label>Price:</label>
+            <input id="price-inp" type="number" />
+          </div>
+        </div>
+
+        <!-- Alt Kısım -->
+        <div class="double">
+          <div class="form-checked-field">
+            <input type="checkbox" id="checked" />
+            <label for="checked">Paid</label>
+          </div>
+          <button id="add-btn">Add</button>
+        </div>
+      </form>
+
+      <!-- Toplam Alanı -->
+
+      <div class="sum">Total Spend: <span id="price-info">0$</span></div>
+
+      <!-- Select Alanı -->
+
+      <select>
+        <option value="all">All</option>
+        <option value="paid">Paid</option>
+        <option value="not-paid">Not Paid</option>
+      </select>
+
+      <!-- Harcama Listesi -->
+      <div id="list"></div>
+    </div>
+
+    <!-- Js Bağlantı -->
+    <script src="app.js"></script>
+  </body>
+</html>
